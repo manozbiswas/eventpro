@@ -1,8 +1,8 @@
 <?php
-if ( file_exists( dirname( __FILE__ ) . '/cmb2/init.php' ) ) {
-    require_once dirname( __FILE__ ) . '/cmb2/init.php';
-} elseif ( file_exists( dirname( __FILE__ ) . '/cmb2/init.php' ) ) {
-    require_once dirname( __FILE__ ) . '/cmb2/init.php';
+if ( file_exists( dirname( __FILE__ ) . '/cmb/init.php' ) ) {
+    require_once dirname( __FILE__ ) . '/cmb/init.php';
+} elseif ( file_exists( dirname( __FILE__ ) . '/cmb/init.php' ) ) {
+    require_once dirname( __FILE__ ) . '/cmb/init.php';
 }
 if ( file_exists( dirname( __FILE__ ) . '/eventcpt.php' ) ) {
     require_once dirname(__FILE__) . '/eventcpt.php';
