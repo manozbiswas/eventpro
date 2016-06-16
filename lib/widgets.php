@@ -155,9 +155,13 @@ class RecentEventWidget extends WP_Widget
                         </div>
                         <div class="event-details">
                             <div class="statusbar">
-                                <span class="status">Live</span>
-                                <span
-                                    class="time"><?php echo !empty($eventDate) ? date("m.d D", $eventDate) : ''; ?></span>
+                                <ul class="arrow-recent">
+                                    <li>Live</li>
+                                    <li>
+                                        <span class="date"><?php echo !empty($eventDate) ? date("m.d", $eventDate) : ''; ?></span>
+                                        <span class="day"><?php echo !empty($eventDate) ? date("D", $eventDate) : ''; ?></span>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="open-starts">
                                 <span class="open">Open <span><?php echo !empty($openAt) ? $openAt : "" ?></span></span>
@@ -255,7 +259,7 @@ class RecentInFormationWidget extends WP_Widget
         $allPostLinks = $instance['allPostLinks'];
         echo $before_widget;
         if ($title) {
-            echo $before_title. $title . '<a href="' . $allPostLinks . '"><span class="all"><i class="fa fa-angle-right"></i>All</span></a>' . $after_title;
+            echo $before_title . $title . '<a href="' . $allPostLinks . '"><span class="all"><i class="fa fa-angle-right"></i>All</span></a>' . $after_title;
         }
         $this->getRecentInformationLists($numberOfListings);
         echo $after_widget;

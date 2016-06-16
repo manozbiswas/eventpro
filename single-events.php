@@ -33,15 +33,17 @@ get_header();
                                         <img class="img-responsive" src="<?php echo $image; ?>" alt="">
                                     </div>
                                     <div class="details-pane">
-                                        <span class="status"><?php echo !empty($status) ? $status[0] : 'Live'; ?></span>
-                                                <span class="bg-color-yellow same">
-                                                     <span
-                                                         class="date  "> <?php echo !empty($eventDate) ? date("m.d D", $eventDate) : ''; ?></span>
-                                                    <span
-                                                        class="time  ">OPEN <span><?php echo !empty($openAt) ? $openAt : ""; ?></span> / START
-                                                        <span><?php echo !empty($startAt) ? $startAt : ''; ?></span>
-                                                    </span>
-                                                </span>
+                                        <ul class="make-arrow">
+                                            <li class="li-status"><?php echo !empty($status) ? $status[0] : 'Live'; ?></li>
+                                            <li class="bg-color-yellow li-same">
+                                <span
+                                    class="date  "> <?php echo !empty($eventDate) ? date("m.d D", $eventDate) : ''; ?></span> |
+                                <span class="time  ">OPEN
+                                    <span><?php echo !empty($openAt) ? $openAt : ""; ?></span> / START
+                                    <span><?php echo !empty($startAt) ? $startAt : ''; ?></span>
+                                </span>
+                                            </li>
+                                        </ul>
                                     </div>
                                     <h2 class="event-title title">
                                         <?php the_title(); ?>
@@ -83,7 +85,7 @@ get_header();
                                 </div>
                                 <?php wp_reset_postdata(); ?>
                             <?php else: ?>
-                                <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>f(!emp
+                                <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
                             <?php endif; ?>
                         </div>
                     </div><!--content left ends-->

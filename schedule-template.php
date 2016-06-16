@@ -46,21 +46,26 @@ get_header();
                                             $image = get_template_directory_uri() . '/assets/images/no-featured-image.png';
                                         }
                                         ?>
-                                        <a href="<?php the_permalink();?>"> <img class="img-responsive" src="<?php echo $image; ?>" alt=""></a>
+                                        <a href="<?php the_permalink(); ?>"> <img class="img-responsive"
+                                                                                  src="<?php echo $image; ?>"
+                                                                                  alt=""></a>
                                     </div>
                                     <div class="details-pane">
-                                        <span class="status"><?php echo !empty($status) ? $status[0] : 'Live'; ?></span>
-                                                <span class="bg-color-yellow same">
-                                                     <span
-                                                         class="date  "> <?php echo !empty($eventDate) ? date("m.d D", $eventDate) : ''; ?></span>
-                                                    <span
-                                                        class="time  ">OPEN <span><?php echo !empty($openAt) ? $openAt : ""; ?></span> / START
-                                                        <span><?php echo !empty($startAt) ? $startAt : ''; ?></span>
-                                                    </span>
-                                                </span>
+                                        <ul class="make-arrow">
+                                            <li class="li-status"><?php echo !empty($status) ? $status[0] : 'Live'; ?></li>
+                                            <li class="bg-color-yellow li-same">
+                                <span
+                                    class="date  "> <?php echo !empty($eventDate) ? date("m.d D", $eventDate) : ''; ?></span>
+                                                |
+                                <span class="time  ">OPEN
+                                    <span><?php echo !empty($openAt) ? $openAt : ""; ?></span> / START
+                                    <span><?php echo !empty($startAt) ? $startAt : ''; ?></span>
+                                </span>
+                                            </li>
+                                        </ul>
                                     </div>
                                     <h2 class="event-title title">
-                                       <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+                                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                     </h2>
                                     <h4 class="sub-title">
                                         <?php echo !empty($subTitle) ? $subTitle : ''; ?>
@@ -75,13 +80,14 @@ get_header();
                                     </div>
                                     <div class="ticket-contact">
                                         <ul>
-                                            <li><i class="fa fa-angle-right"></i> <a href=<?php the_permalink();?>"">Details</a></li>
+                                            <li><i class="fa fa-angle-right"></i> <a href=<?php the_permalink(); ?>"">Details</a>
+                                            </li>
                                             <li><i class="fa fa-angle-right"></i> <a href="">Ticket</a></li>
                                             <li><i class="fa fa-angle-right"></i> <a href="">Contact</a></li>
                                         </ul>
                                     </div>
                                 </div>
-<!--                                <hr/>-->
+                                <!--                                <hr/>-->
                             <?php endwhile; ?>
                             <?php wp_reset_postdata(); ?>
                         <?php else: ?>

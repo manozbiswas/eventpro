@@ -1,6 +1,4 @@
 <?php
-
-
 if (file_exists(dirname(__FILE__) . '/lib/require.php')) {
     require_once dirname(__FILE__) . '/lib/require.php';
 }

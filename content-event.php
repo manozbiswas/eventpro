@@ -1,6 +1,8 @@
 <div class="content-header">
-    <h2 class="heading">RECOMMEND LIVE EVENT</h2>
-    <a href="<?php global  $redux_demo; echo !empty($redux_demo['schedule-page']) ? $redux_demo['schedule-page']: '';?>" class="btn btn-primary link-schedule">
+    <h1 class="heading">RECOMMEND LIVE EVENT</h1>
+    <a href="<?php global $redux_demo;
+    echo !empty($redux_demo['schedule-page']) ? $redux_demo['schedule-page'] : ''; ?>"
+       class="btn btn-primary link-schedule">
         <i class="fa fa-angle-right"></i>
         Schedule
     </a>
@@ -40,14 +42,21 @@
                         </a>
                     </div>
                     <div class="details-pane">
-                                                <span
-                                                    class="status"><?php echo !empty($status) ? $status[0] : 'Live'; ?></span>
-                                                <span class="bg-color-yellow same">
-                                                     <span
-                                                         class="date  "> <?php echo !empty($eventDate) ? date("m.d D", $eventDate) : ''; ?></span> |
-                                                    <span
-                                                        class="time  ">OPEN <span><?php echo !empty($openAt) ? $openAt : ""; ?></span> / START <span><?php echo !empty($startAt) ? $startAt : ''; ?></span> </span>
-                                                </span>
+                        <ul class="make-arrow">
+                            <li class="li-status"><?php echo !empty($status) ? $status[0] : 'Live'; ?></li>
+                            <li class="bg-color-yellow li-same">
+                                <span
+                                    class="date  "> <?php echo !empty($eventDate) ? date("m.d D", $eventDate) : ''; ?></span> |
+                                <span class="time  ">OPEN
+                                    <span><?php echo !empty($openAt) ? $openAt : ""; ?></span> / START
+                                    <span><?php echo !empty($startAt) ? $startAt : ''; ?></span>
+                                </span>
+                            </li>
+                        </ul>
+<!--                        <span class="status"></span>-->
+<!--                            <span class="bg-color-yellow same">-->
+<!--                                -->
+<!--                            </span>-->
                     </div>
                     <h3 class="title"><a
                             href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>

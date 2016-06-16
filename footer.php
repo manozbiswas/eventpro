@@ -133,6 +133,7 @@
                             'menu_id' => 'dropmenu',
                             'menu_class' => '',
                             'link_before' => '<i class="fa fa-angle-right"></i> ',
+                            'link_after' => '<i class="fa fa-clone" aria-hidden="true"></i> ',
                             'fallback_cb' => ''
                         )
                     );
