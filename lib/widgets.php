@@ -168,7 +168,7 @@ class RecentEventWidget extends WP_Widget
                                 <span class="starts">Starts <span><?php echo !empty($startAt) ? $startAt : "" ?></span></span>
                             </div>
                             <div class="excerpt">
-                                <p><?php echo excerpt(3); ?></p>
+                                <p><?php echo excerpt(6); ?></p>
                             </div>
                         </div>
                     </a>

@@ -90,35 +90,37 @@
     <!--social widget starts-->
     <section class="social-widget">
         <div class="container custom-container">
-            <div class="social-app">
-                <ul class="social-link">
-                    <?php
-                    global $redux_demo;
-//                    print_r($redux_demo);
-                    $facebook = !empty($redux_demo['opt-facebook-link']) ? $redux_demo['opt-facebook-link'] : 'https://facebook.com';
-                    $twitter = !empty($redux_demo['opt-twitter-link']) ? $redux_demo['opt-twitter-link'] : 'https://twitter.com';
-                    $instagram = !empty($redux_demo['opt-instagram-link']) ? $redux_demo['opt-instagram-link'] : 'https://instagram.com';
-                    $artistRecruit = !empty($redux_demo['artist-recruit-link']) ? $redux_demo['artist-recruit-link'] : '';
-                    $staffRecruit = !empty($redux_demo['staff-recruit-link']) ? $redux_demo['staff-recruit-link'] : '';
-                    $contactPage = !empty($redux_demo['contact-page']) ? $redux_demo['contact-page'] : '';
-                    $informationPage = !empty($redux_demo['information-page']) ? $redux_demo['information-page'] : '';
-                    ?>
-                    <li class="artist-recruit"><a target="_blank" href="<?php echo esc_html($artistRecruit); ?>">Artist
-                            Recruit</a></li>
-                    <li class="staff-recruit"><a target="_blank" href="<?php echo esc_html($staffRecruit); ?>">Staff
-                            Recruit</a></li>
-                    <li class="social-bg facebook"><a target="_blank" href="<?php echo esc_html($facebook); ?>"><i
-                                class="fa fa-facebook"></i> Facebook</a></li>
-                    <li class="social-bg twitter"><a target="_blank" href="<?php echo esc_html($twitter); ?>"><i
-                                class="fa fa-twitter"></i> Twitter</a></li>
-                    <li class="social-bg instagram"><a target="_blank" href="<?php echo esc_html($instagram); ?>"><i
-                                class="fa fa-instagram"></i> Instagram</a></li>
-                </ul>
-                <ul class="extra-link">
-                    <li class="contact"><a target="_blank" href="<?php echo esc_html($contactPage); ?>">Contact</a></li>
-                    <li class="information"><a target="_blank" href="<?php echo esc_html($informationPage); ?>">Information</a>
-                    </li>
-                </ul>
+            <div class="row">
+                <div class="social-app">
+                    <ul class="social-link">
+                        <?php
+                        global $redux_demo;
+                        //                    print_r($redux_demo);
+                        $facebook = !empty($redux_demo['opt-facebook-link']) ? $redux_demo['opt-facebook-link'] : 'https://facebook.com';
+                        $twitter = !empty($redux_demo['opt-twitter-link']) ? $redux_demo['opt-twitter-link'] : 'https://twitter.com';
+                        $instagram = !empty($redux_demo['opt-instagram-link']) ? $redux_demo['opt-instagram-link'] : 'https://instagram.com';
+                        $artistRecruit = !empty($redux_demo['artist-recruit-link']) ? $redux_demo['artist-recruit-link'] : '';
+                        $staffRecruit = !empty($redux_demo['staff-recruit-link']) ? $redux_demo['staff-recruit-link'] : '';
+                        $contactPage = !empty($redux_demo['contact-page']) ? $redux_demo['contact-page'] : '';
+                        $informationPage = !empty($redux_demo['information-page']) ? $redux_demo['information-page'] : '';
+                        ?>
+                        <li class="artist-recruit"><a target="_blank" href="<?php echo esc_html($artistRecruit); ?>">Artist
+                                Recruit</a></li>
+                        <li class="staff-recruit"><a target="_blank" href="<?php echo esc_html($staffRecruit); ?>">Staff
+                                Recruit</a></li>
+                        <li class="social-bg facebook"><a target="_blank" href="<?php echo esc_html($facebook); ?>"><i
+                                    class="fa fa-facebook"></i> Facebook</a></li>
+                        <li class="social-bg twitter"><a target="_blank" href="<?php echo esc_html($twitter); ?>"><i
+                                    class="fa fa-twitter"></i> Twitter</a></li>
+                        <li class="social-bg instagram"><a target="_blank" href="<?php echo esc_html($instagram); ?>"><i
+                                    class="fa fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                    <ul class="extra-link">
+                        <li class="contact"><a target="_blank" href="<?php echo esc_html($contactPage); ?>">Contact</a></li>
+                        <li class="information"><a target="_blank" href="<?php echo esc_html($informationPage); ?>">Information</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section><!--social widget ends-->

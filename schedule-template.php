@@ -54,9 +54,8 @@ get_header();
                                         <ul class="make-arrow">
                                             <li class="li-status"><?php echo !empty($status) ? $status[0] : 'Live'; ?></li>
                                             <li class="bg-color-yellow li-same">
-                                <span
-                                    class="date  "> <?php echo !empty($eventDate) ? date("m.d D", $eventDate) : ''; ?></span>
-                                                |
+                                <span class="date  "> <?php echo !empty($eventDate) ? date("m.d", $eventDate) : ''; ?><span class="day"><?php echo !empty($eventDate) ? date("D", $eventDate) : ''; ?></span></span>
+                                                <span class="bar hide-in-mobile"></span>
                                 <span class="time  ">OPEN
                                     <span><?php echo !empty($openAt) ? $openAt : ""; ?></span> / START
                                     <span><?php echo !empty($startAt) ? $startAt : ''; ?></span>

@@ -22,7 +22,9 @@
         </div>
         <div class="widget">
             <div class="widget-content">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/diffusy.jpg" alt="">
+                <div class="difusy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/diffusy.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
