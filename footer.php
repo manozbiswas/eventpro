@@ -3,7 +3,7 @@
     <div class="container custom-container">
         <div class="row">
             <div class="col-md-12">
-                <div class="instagram">
+                <div class="instagram hide-in-mobile">
                     <div class="instapadding">
                         <ul class="instagram-list">
                             <li>
@@ -89,7 +89,7 @@
     </section><!--map ends-->
     <!--social widget starts-->
     <section class="social-widget">
-        <div class="container custom-container">
+        <div class="container custom-container ">
             <div class="row">
                 <div class="social-app">
                     <ul class="social-link">

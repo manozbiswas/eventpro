@@ -1,7 +1,3 @@
-<?php
-global $redux_demo;
-//print_r($redux_demo);
-?>
 <!DOCTYPE html>
 <html class="no-js" lang="">
 <head>
@@ -22,7 +18,10 @@ global $redux_demo;
     <?php //echo get_template_directory_uri();?><!--/assets/css/tab.css">-->
     <!--    <link rel="stylesheet" href="--><?php //echo get_stylesheet_uri();?><!--">-->
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/modernizr-2.8.3.min.js"></script>
-    <?php wp_head(); ?>
+    <?php wp_head();
+    global $redux_demo;
+    //print_r($redux_demo);
+    ?>
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -60,16 +59,22 @@ global $redux_demo;
 
                             ?>
                             <ul class="link-bar-nav">
-                                <li class="link-only"><a target="_blank"
-                                                         href="<?php echo !empty($artistRecruit) ? esc_html($artistRecruit) : ''; ?>">Artist
-                                        Recruit</a></li>
-                                <li class="link-only"><a target="_blank"
-                                                         href="<?php echo !empty($staffRecruit) ? esc_html($staffRecruit) : ''; ?>">staff
-                                        Recruit</a></li>
-                                <li><a target="_blank"
-                                       href="<?php echo !empty($facebook) ? esc_html($facebook) : ''; ?>"><i
-                                            class="fa fa-facebook"></i></a></li>
-                                <li><a target="_blank" href="<?php echo !empty($twitter) ? esc_html($twitter) : ''; ?>"><i
+                                <li class="link-only">
+                                    <a target="_blank" href="<?php echo !empty($artistRecruit) ? esc_html($artistRecruit) : ''; ?>">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/gitter.png" alt="">Artist Recruit<br/> 出演者募集
+                                    </a>
+                                </li>
+                                <li class="link-only">
+                                    <a target="_blank" href="<?php echo !empty($staffRecruit) ? esc_html($staffRecruit) : ''; ?>">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/staff.png" alt="">staff Recruit<br/>スタッフ募集
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank"
+                                       href="<?php echo !empty($facebook) ? esc_html($facebook) : ''; ?>">
+                                        <i class="fa fa-facebook"></i></a></li>
+                                <li>
+                                    <a target="_blank" href="<?php echo !empty($twitter) ? esc_html($twitter) : ''; ?>"><i
                                             class="fa fa-twitter"></i></a></li>
                                 <li><a target="_blank"
                                        href="<?php echo !empty($instagram) ? esc_html($instagram) : ''; ?>"><i

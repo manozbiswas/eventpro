@@ -74,9 +74,18 @@ ul li {
 }
 
 /*Header*/
+.header-top {
+    margin-bottom: 10px;
+}
+.link-only img {
+    float: left;
+    height: 40px;
+    width: 40px;
+}
 .link-bar-nav {
     float: right;
     margin-right: 0px;
+    padding: 10px;
 }
 
 .logo {
@@ -84,8 +93,8 @@ ul li {
 }
 
 .link-bar {
-    margin-top: 25px;
-    margin-right: 0px;
+    margin-right: 0;
+    margin-top: 5px;
 }
 
 .link-bar-nav li {
@@ -98,28 +107,28 @@ ul li {
 }
 
 .link-bar-nav .link-only {
-    border: 1px solid;
+    border: 0px solid;
     padding: 3px 5px;
 }
 
 .link-bar i.fa.fa-facebook {
-    background: #305097;
-    padding: 5px 10px;
-    font-size: 18px;
+    background: #305097 none repeat scroll 0 0;
     color: #fff;
+    font-size: 20px;
+    padding: 15px 20px;
 }
 
 .link-bar i.fa.fa-twitter {
     background: #00ACED;
-    padding: 5px 10px;
-    font-size: 18px;
+    font-size: 20px;
+    padding: 15px 20px;
     color: #fff;
 }
 
 .link-bar i.fa.fa-instagram {
     background: #3F729B;
-    padding: 5px 10px;
-    font-size: 18px;
+    font-size: 20px;
+    padding: 15px 20px;
     color: #fff;
 }
 
@@ -365,26 +374,31 @@ hr.header-line {
 
 .content .heading {
     color: #1e40a4;
+    font-size: 40px;
     font-style: italic;
     font-weight: 600;
-    font-size: 32px;
+    padding: 10px 0;
 }
-
 .link-schedule {
     background: #1e40a4 none repeat scroll 0 0;
     border-radius: 0;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 5px 20px;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 20px;
     position: absolute;
-    right: 17px;
+    right: 20px;
     text-transform: uppercase;
-    top: -5px;
+    top: 16px;
+    float: right;
 }
 
 .link-schedule .fa.fa-angle-right {
+    color: #ffd200;
+    float: left;
     font-size: 20px;
-    color: #FFD200;
+    font-weight: 700;
+    padding-right: 10px;
 }
 
 .content .header-line {
@@ -606,16 +620,17 @@ hr.header-line {
 .all {
     background: #328d00 none repeat scroll 0 0;
     color: #fff;
-    font-size: 12px;
+    float: right;
+    font-size: 16px;
     font-style: initial;
-    margin-left: 5px;
-    padding: 5px;
+    margin-left: 0;
+    padding: 4px 5px;
     text-align: right;
 }
 
 .information .date {
     color: #328d00;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 600;
     padding: 0;
 }
@@ -1269,7 +1284,7 @@ ul.ticket-package span.cc {
     margin: 0;
     padding: 20px 0;
     text-align: center;
-    width: 19%;
+    width: 19.5%;
 }
 
 .social-app ul.social-link li a {
@@ -1315,9 +1330,9 @@ ul.ticket-package span.cc {
     display: inline-block;
     float: left;
     margin-right: 5px;
-    padding: 20px 30px;
+    padding: 20px 0;
     text-align: center;
-    width: 48%;
+    width: calc(98.8% / 2);
 }
 
 .extra-link li.contact {
@@ -1400,6 +1415,14 @@ ul.extra-link li a {
     border-left: 15px solid transparent;
 }
 
+.menu-footer-links-container {
+    display: table;
+    width: 100%;
+}
+.menu-footer-links-container > ul {
+    display: flex;
+    width: 95%;
+}
 .footer-link {
     background: #eee none repeat scroll 0 0;
     margin-top: 40px;
@@ -1407,8 +1430,10 @@ ul.extra-link li a {
 }
 
 .footer-link ul li {
-    display: inline-block;
+    display: inline;
+    flex-flow: row nowrap;
     padding: 10px 0;
+    width: 20%;
 }
 
 .footer-link li a {
@@ -1422,7 +1447,7 @@ ul.extra-link li a {
     color: #febd0e;
     font-size: 20px;
     font-weight: 600;
-    padding: 5px 2px;
+    padding: 5px 12px;
 }
 
 .footer-link li a i.fa.fa-clone {
@@ -1494,7 +1519,7 @@ ul.extra-link li a {
     height: 70px;
     padding: 0;
     position: absolute;
-    right: 40px;
+    right: 10px;
     text-align: center;
     text-decoration: none;
     top: -60px;
@@ -1838,6 +1863,27 @@ ul.extra-link li a {
     }
     .hide-in-mobile {
         display: none;
+    }
+    .link-schedule {
+        background: #1e40a4 none repeat scroll 0 0;
+        border-radius: 0;
+        display: block;
+        float: none;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+        position: relative;
+        right: 0;
+        text-transform: uppercase;
+    }
+
+    .link-schedule .fa.fa-angle-right {
+        color: #ffd200;
+        float: left;
+        font-size: 40px;
+        font-weight: 700;
+        padding-right: 10px;
     }
 
     .banner-col-2 {
@@ -2274,7 +2320,7 @@ ul.extra-link li a {
         border-right: 2px solid #fff;
     }
 
-    .menu-footer-links-container a i {
+    .menu-footer-links-container a i.fa.fa-angle-right {
         display: none;
     }
 
@@ -2283,7 +2329,7 @@ ul.extra-link li a {
         box-sizing: content-box;
         display: inline-block;
         margin-bottom: 0;
-        padding: 0;
+        padding: 5px 0;
         text-align: center;
         vertical-align: middle;
         width: 49%;
@@ -2296,9 +2342,10 @@ ul.extra-link li a {
     }
 
     .footer-link li a {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 600;
         padding-right: 10px;
+        font-family: hirakaku, sans-serif;
         text-transform: uppercase;
     }
 
@@ -2330,7 +2377,7 @@ ul.extra-link li a {
         box-sizing: content-box;
         display: inline-block;
         margin: 0;
-        padding: 10px 0;
+        padding: 20px 0;
         text-align: center;
         width: 49%;
     }
@@ -2344,7 +2391,7 @@ ul.extra-link li a {
     .footer-navbar li a {
         border-right: 0 solid #fff;
         color: #fff;
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 600;
         padding: 12px 5px;
         text-transform: uppercase;
@@ -2439,12 +2486,26 @@ ul.extra-link li a {
         height: 180px;
         width: 100%;
     }
-
+    .menu-footer-links-container > ul {
+        display: block;
+        width: 100%;
+    }
+    .banner-image img {
+        height: 360px;
+        width: 100%;
+    }
+    banner {
+        margin-bottom: 0px;
+        margin-top: 20px;
+        overflow: hidden;
+        width: 100%;
+    }
     #scrollUp {
         display: none !important;
     }
-}
 
+}
+/*end of 767 to 992*/
 @media screen and (min-width: 481px) and (max-width: 620px) {
 
     .header-bottom {
@@ -2474,7 +2535,7 @@ ul.extra-link li a {
         color: #fff;
         font-size: 16px;
         font-weight: 600;
-        margin-right: 0;
+        margin-right: 10px;
         padding: 5px;
         text-transform: uppercase;
     }
@@ -2545,7 +2606,44 @@ ul.extra-link li a {
     .custom-container {
         width: 100%;
     }
+    .banner-image img {
+        height: 320px;
+        width: 100%;
+    }
+    banner {
+        margin-bottom: 0px;
+        margin-top: 20px;
+        overflow: hidden;
+        width: 100%;
+    }
+    .link-schedule {
+        background: #1e40a4 none repeat scroll 0 0;
+        border-radius: 0;
+        display: block;
+        float: none;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+        position: relative;
+        right: 0;
+        text-transform: uppercase;
+    }
 
+    .link-schedule .fa.fa-angle-right {
+        color: #ffd200;
+        float: left;
+        font-size: 40px;
+        font-weight: 700;
+        padding-right: 10px;
+    }
+    .content .heading {
+        color: #1e40a4;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 600;
+        padding: 10px 0;
+    }
     .collapse.navbar-collapse ul {
         display: block;
         margin: 0;
@@ -2762,7 +2860,7 @@ ul.extra-link li a {
         margin-left: -5px;
     }
 
-    .menu-footer-links-container a i {
+    .menu-footer-links-container a i.fa.fa-angle-right {
         display: none;
     }
 
@@ -3064,7 +3162,10 @@ ul.extra-link li a {
         padding: 0;
         width: 50%;
     }
-
+    .menu-footer-links-container > ul {
+        display: block;
+        width: 100%;
+    }
     #scrollUp {
         display: none !important;
     }
@@ -3079,7 +3180,18 @@ ul.extra-link li a {
     .logo img {
         width: 99%;
     }
-
+    .link-schedule {
+        background: #1e40a4 none repeat scroll 0 0;
+        border-radius: 0;
+        display: block;
+        font-size: 28px;
+        font-weight: 700;
+        padding: 15px 20px;
+        position: relative;
+        right: 0;
+        text-transform: uppercase;
+        top: 0;
+    }
     .recent-events .time {
         background: #ffd200 none repeat scroll 0 0;
         color: #1e40a4;
@@ -3268,7 +3380,7 @@ ul.extra-link li a {
     .event .li-status:after {
         border-bottom: 24px solid transparent;
         border-left: 22px solid #fff;
-        border-top: 25px solid transparent;
+        border-top: 23px solid transparent;
         content: "";
         display: block;
         position: absolute;

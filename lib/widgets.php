@@ -285,7 +285,7 @@ class RecentInFormationWidget extends WP_Widget
                 ?>
                 <li class="information">
                     <a href="<?php echo the_permalink(); ?>"> <span
-                            class="date"><?php echo the_time('Y.m.d D') ?></span>
+                            class="date"><?php echo the_time('Y.m.d') ?></span>
                         <p class="excerpt"><?php echo excerpt(20); ?></p>
                     </a>
                 </li>
