@@ -9,7 +9,8 @@
         <div class="widget">
             <h4 class="widget-title month-schedule">Monthly Schedule</h4>
             <div class="widget-content">
-                <?php get_calendar(); ?>
+                <input type="hidden" id="my_hidden_input">
+                <div class="my-datepicker" id="datepicker" data-date="06/18/2016"></div>
             </div>
         </div>
 <!--        --><?php //if (is_active_sidebar('recent-information')) : ?>

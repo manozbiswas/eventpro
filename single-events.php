@@ -8,6 +8,7 @@ get_header();
                     <!--content left starts-->
                     <div class="content">
                         <div class="single-event">
+                          single event
                             <?php
                             if (have_posts()):
                                 while (have_posts()):

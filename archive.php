@@ -8,7 +8,7 @@ get_header();
                     <!--content left starts-->
                     <div class="content">
                         <div class="single-event post">
-                            index post
+                            archive
                             <?php
                             if (have_posts()):
                                 while (have_posts()):
@@ -54,13 +54,13 @@ get_header();
                                 <div class="nextpast loadmore">
                                     <ul>
                                         <li style="">
-                                           <a href="#">Load more</a>
+                                            <a href="#">Load more</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <?php wp_reset_postdata(); ?>
                             <?php else: ?>
-                                <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+                                <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>f(!emp
                             <?php endif; ?>
                         </div>
                     </div><!--content left ends-->

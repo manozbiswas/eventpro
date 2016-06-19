@@ -57,8 +57,8 @@ get_header();
                                 <span class="date  "> <?php echo !empty($eventDate) ? date("m.d", $eventDate) : ''; ?><span class="day"><?php echo !empty($eventDate) ? date("D", $eventDate) : ''; ?></span></span>
                                                 <span class="bar hide-in-mobile"></span>
                                 <span class="time  ">OPEN
-                                    <span><?php echo !empty($openAt) ? $openAt : ""; ?></span> / START
-                                    <span><?php echo !empty($startAt) ? $startAt : ''; ?></span>
+                                   <?php echo !empty($openAt) ? $openAt : ""; ?> / START
+                                    <?php echo !empty($startAt) ? $startAt : ''; ?>
                                 </span>
                                             </li>
                                         </ul>

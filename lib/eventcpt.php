@@ -3,7 +3,8 @@
 * Creating a function to create our CPT
 */
 
-function custom_post_type()
+add_action('init', 'eventpro_custom_post_type', 0);
+function eventpro_custom_post_type()
 {
 // Set UI labels for Custom Post Type
     $labels = array(
@@ -46,14 +47,13 @@ function custom_post_type()
         'menu_icon' => get_template_directory_uri() . "/assets/images/icon/schedule-icon.png",
         'can_export' => true,
         'has_archive' => true,
+        'rewrite' => array('slug' => 'events'),
         'exclude_from_search' => false,
         'publicly_queryable' => true,
         'capability_type' => 'post',
     );
-
     // Registering your Custom Post Type
-    register_post_type('Events', $args);
-
+    register_post_type('events', $args);
 }
 
 /* Hook into the 'init' action so that the function
@@ -61,7 +61,6 @@ function custom_post_type()
 * unnecessarily executed. 
 */
 
-add_action('init', 'custom_post_type', 0);
 
 add_action('admin_head', 'cpt_icons');
 function cpt_icons()

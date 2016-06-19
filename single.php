@@ -7,6 +7,7 @@ get_header();
                 <div class="col-md-9 col-sm-12">
                     <!--content left starts-->
                     <div class="content">
+                        single post
                         <div class="single-event post">
                             <?php if (have_posts()): ?>
                                 <?php while (have_posts()): ?>
@@ -58,7 +59,7 @@ get_header();
                                 </div>
                                 <?php wp_reset_postdata(); ?>
                             <?php else: ?>
-                                <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>f(!emp
+                                <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
                             <?php endif; ?>
                         </div>
                     </div><!--content left ends-->

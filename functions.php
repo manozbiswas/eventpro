@@ -16,6 +16,9 @@ function eventpro_scripts()
     wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
     wp_enqueue_style('fontawesome-css', get_template_directory_uri() . '/assets/css/font-awesome.min.css');
     wp_enqueue_style('tab-css', get_template_directory_uri() . '/assets/css/tab.css');
+    wp_enqueue_style('bootstrap-datepicker', get_template_directory_uri() . '/assets/css/bootstrap-datepicker.css');
+    wp_enqueue_style('bootstrap-datepicker3', get_template_directory_uri() . '/assets/css/bootstrap-datepicker3.css');
+    wp_enqueue_style('bootstrap-calendar', get_template_directory_uri() . '/assets/css/calendar.css');
     // Load our main stylesheet.
     wp_enqueue_style('main-style-sheet', get_stylesheet_uri());
 
@@ -24,6 +27,7 @@ function eventpro_scripts()
     //Load other scripts
     wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '', true);
     wp_enqueue_script('scrollup-js', get_template_directory_uri() . '/assets/js/jquery.scrollUp.js', array(), '', true);
+    wp_enqueue_script('bootstrap-datepicker', get_template_directory_uri() . '/assets/js/bootstrap-datepicker.js', array(), '', true);
     wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', array(), '20141010', true);
 
 }
